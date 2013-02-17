@@ -1,3 +1,5 @@
-# Personal Dot files
-
+# Personal dot files
 Nothing fancy starting light.
+
+## TODO
+* Figure out git submodule thingy

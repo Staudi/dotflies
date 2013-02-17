@@ -1,0 +1,39 @@
+set nolist
+set nospell
+:nnoremap <leader>rc :split ~/.vimrc.local<cr>
+let g:NERDTreeDirArrows=0
+
+inoremap jj <Esc> 
+
+" Map ctrl-movement keys to window switching
+map <C-k> <C-w><Up>
+map <C-j> <C-w><Down>
+map <C-l> <C-w><Right>
+map <C-h> <C-w><Left>
+
+map gn :bn<cr>
+map gp :bp<cr>
+map gd :bd<cr>
+
+"Indent stuff
+set smartindent
+set autoindent
+
+"Set incremental searching"
+set incsearch
+
+set encoding=utf-8
+"colorscheme twilight256
+colorscheme jellybeans
+set wildchar=<Tab> wildmenu wildmode=full
+
+let g:indent_guides_enable_on_vim_startup = 0
+
+augroup CursorLine
+au!
+au VimEnter,WinEnter,BufWinEnter * setlocal cursorline
+au WinLeave * setlocal nocursorline
+augroup END
+
+let g:user_zen_expandabbr_key = '<c-e>'
+let g:use_zen_complete_tag = 1
