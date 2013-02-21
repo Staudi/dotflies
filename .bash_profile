@@ -29,3 +29,6 @@ alias ll='ls -kahG'
 alias lL='ls -lahG'
 
 PS1="\[\e[01;32m\]\[\e[01;34m\]\W \`if [ \$? = 0 ]; then echo -e '\[\e[01;32m\]:)'; else echo -e '\[\e[01;31m\]:('; fi\` \[\e[01;34m\]$\[\e[00m\]"
+
+bind -r '\C-s'
+stty -ixon

@@ -1,6 +1,6 @@
 set nolist
 set nospell
-:nnoremap <leader>rc :split ~/.vimrc.local<cr>
+:nnoremap <leader>rc :split ~/Documents/Github/dotflies/.vimrc.local<cr>
 let g:NERDTreeDirArrows=0
 
 inoremap jj <Esc> 
@@ -37,3 +37,13 @@ augroup END
 
 let g:user_zen_expandabbr_key = '<c-e>'
 let g:use_zen_complete_tag = 1
+
+nnoremap <leader>d :NERDTreeToggle<cr>
+
+let g:user_zen_leader_key = '<c-e>'
+let g:user_next_key = 'd'
+let g:user_prev = 'a'
+
+:nmap <c-s> :w<CR>
+:imap <c-s> <Esc>:w<CR>a
+:imap <c-s> <Esc><c-s>
