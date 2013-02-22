@@ -21,7 +21,7 @@ alias pull='git pull'
 alias pp='pull && push'
 alias st='git status'
 alias master='git checkout master'
-alias eb='vim ~/.bash_profile'
+alias eb='vim ~/Documents/Github/dotflies/.bash_profile'
 
 alias c='clear'
 alias ls='ls -G'
